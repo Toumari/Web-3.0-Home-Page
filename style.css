@@ -171,6 +171,13 @@ nav {
   font-weight: 900;
 }
 
+@media only screen and (min-width: 768px) {
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   body {
     margin-bottom: 2rem;
@@ -299,11 +306,6 @@ nav {
 @media only screen and (min-width: 1536px) {
   .hero {
     grid-template-rows: 1fr;
-  }
-
-  .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .new-title {
