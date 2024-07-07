@@ -157,7 +157,8 @@ nav {
 .post-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
+  gap: 1.5rem;
 }
 
 .post-details-num {
@@ -169,13 +170,6 @@ nav {
 .post-details-title {
   font-size: 1.25rem;
   font-weight: 900;
-}
-
-@media only screen and (min-width: 768px) {
-  .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -286,20 +280,28 @@ nav {
   }
 
   .post-details-num {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .post-details-title {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .post-details-copy {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    color: var(--dark-grey-blue);
     line-height: 1.75;
   }
 
   .new-section {
     padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
