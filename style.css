@@ -21,6 +21,7 @@
 
 body {
     margin-bottom: 2rem;
+    background-color: var(--off-white);
 }
 
 header {
@@ -241,7 +242,6 @@ nav {
         margin-bottom: 0;
         grid-column: 1 / 1;
         grid-row: 1 / -1;
-        place-content: center;
         
     }
 
@@ -305,6 +305,7 @@ nav {
 
     .post-details-copy {
         font-size: 1.125rem;
+        line-height: 1.75;
     }
 
     .new-section {
